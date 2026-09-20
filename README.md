@@ -63,13 +63,13 @@ Integrating **physics-informed machine learning**, **Sentinel-2 satellite NDVI t
 
 ## 📸 Platform Interface & Screenshot Walkthrough
 
-Below are the actual operational screens of the NER-LEWS command center with in-depth explanations of the telemetry, UI design, and tactical decision-support tools available in each module.
+Below are the actual operational screens of the **BHOO-सतर्क** command center with in-depth explanations of the telemetry, UI design, and tactical decision-support tools available in each module.
 
 ---
 
 ### 1. 🖥️ Executive Tactical Cockpit (Dashboard)
 
-![NER-LEWS Executive Tactical Cockpit](docs/images/01_executive_dashboard.png)
+![BHOO-सतर्क Executive Tactical Cockpit](docs/images/01_executive_dashboard.png)
 
 #### 🔍 Screen Breakdown & Visual Highlights:
 - **Real-Time Situation KPI Cards (Top Banner):**
@@ -93,7 +93,7 @@ Below are the actual operational screens of the NER-LEWS command center with in-
 
 ### 2. 🗺️ Tactical GIS Map Explorer
 
-![NER-LEWS Tactical GIS Map Explorer](docs/images/02_gis_map_explorer.png)
+![BHOO-सतर्क Tactical GIS Map Explorer](docs/images/02_gis_map_explorer.png)
 
 #### 🔍 Screen Breakdown & Visual Highlights:
 - **Corridor Inspection Drawer (Left Panel):** Quick-filter sidebar listing all 16 monitored locations with real-time risk badges (`SEVERE`), slope angle (`41.0°`), current risk score (`98.8/100`), and 24h precipitation (`145 mm`).
@@ -117,7 +117,7 @@ Below are the actual operational screens of the NER-LEWS command center with in-
 
 ### 3. 🧠 Geotechnical Physics & What-If ML Simulator
 
-![NER-LEWS Geotechnical Physics & What-If ML Simulator](docs/images/03_prediction_simulator.png)
+![BHOO-सतर्क Geotechnical Physics & What-If ML Simulator](docs/images/03_prediction_simulator.png)
 
 #### 🔍 Screen Breakdown & Visual Highlights:
 - **One-Click Stress Presets:** Pre-calibrated environmental stress profiles:
@@ -144,7 +144,7 @@ Below are the actual operational screens of the NER-LEWS command center with in-
 
 ### 4. 🚨 Disaster Early Warnings & SOP Dispatch Center
 
-![NER-LEWS Disaster Early Warnings and SOP Dispatch Center](docs/images/04_alerts_center.png)
+![BHOO-सतर्क Disaster Early Warnings and SOP Dispatch Center](docs/images/04_alerts_center.png)
 
 #### 🔍 Screen Breakdown & Visual Highlights:
 - **Alert State Counters (Top Cards):**
@@ -169,7 +169,7 @@ Below are the actual operational screens of the NER-LEWS command center with in-
 
 ### 5. 🛣️ Field Operations, Road Connectivity & Response Triage
 
-![NER-LEWS Field Operations and Road Lifeline Graph](docs/images/05_field_operations.png)
+![BHOO-सतर्क Field Operations and Road Lifeline Graph](docs/images/05_field_operations.png)
 
 #### 🔍 Screen Breakdown & Visual Highlights:
 - **Operational Navigation Tabs:**
@@ -194,7 +194,7 @@ Below are the actual operational screens of the NER-LEWS command center with in-
 
 ### 6. 📚 GSI Historical Landslide Catalog & Climate Trends
 
-![NER-LEWS GSI Historical Landslide Catalog](docs/images/06_historical_analysis.png)
+![BHOO-सतर्क GSI Historical Landslide Catalog](docs/images/06_historical_analysis.png)
 
 #### 🔍 Screen Breakdown & Visual Highlights:
 - **Historical Geological Records Table:** Validated records from the Geological Survey of India (GSI) and National Disaster Management Authority (NDMA):
@@ -217,7 +217,7 @@ Below are the actual operational screens of the NER-LEWS command center with in-
 
 ### 7. 🛡️ System Administration, Microservice Health & WhatsApp Gateway
 
-![NER-LEWS System Administration and Settings](docs/images/07_admin_settings.png)
+![BHOO-सतर्क System Administration and Settings](docs/images/07_admin_settings.png)
 
 #### 🔍 Screen Breakdown & Visual Highlights:
 - **Operational System Diagnostics & Microservices (Top Grid):**
@@ -242,7 +242,7 @@ Below are the actual operational screens of the NER-LEWS command center with in-
 
 ### 8. 🔐 Enterprise Multi-Role Authentication & Access Control (RBAC)
 
-![NER-LEWS Enterprise Multi-Role Authentication Portal](docs/images/08_role_based_login.png)
+![BHOO-सतर्क Enterprise Multi-Role Authentication Portal](docs/images/08_role_based_login.png)
 
 #### 🔍 Screen Breakdown & Visual Highlights:
 - **Unified Role-Based Access Gateway (`/login`):**
