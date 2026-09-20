@@ -11,10 +11,10 @@ class Settings(BaseSettings):
         extra="ignore"
     )
 
-    PROJECT_NAME: str = "NER Landslide Early Warning System"
+    PROJECT_NAME: str = "AI-Based early warning and landslide Risk Monitoring System in NER"
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api"
-    DESCRIPTION: str = "AI-Powered Landslide Prediction & Command Center for North Eastern Region"
+    DESCRIPTION: str = "AI-Based early warning and landslide Risk Monitoring System in NER"
 
     SMS_ENABLED: bool = False
     TWILIO_SMS_FROM: str = ''

@@ -1,4 +1,4 @@
-# 🏔️ NER-LEWS: AI-Powered Landslide Early Warning System
+# 🏔️ NER-LEWS: AI-Based early warning and landslide Risk Monitoring System in NER
 ### *Autonomous Geotechnical Risk Intelligence, Multi-Layer GIS Command Center & Disaster Response Coordination for India's North Eastern Region*
 
 <div align="center">
@@ -18,7 +18,7 @@
 
 | 🎯 Smart India Hackathon | 📍 Target Geo-Corridor | ⚡ Validated Benchmarks |
 |:---:|:---:|:---:|
-| **Problem ID: 26001**<br/>Disaster Management & Geospatial Intelligence | **Eastern Himalayas & Indo-Burma Ranges**<br/>(Assam, Meghalaya, Sikkim, Manipur, Mizoram, Arunachal Pradesh, Nagaland, Tripura) | **ROC-AUC: 0.9940 \| F1-Score: 0.9504**<br/>Inference Latency: &lt; 25ms \| 42/42 Tests Passing |
+| **Problem ID: 26001**<br/>*AI-Based early warning and landslide Risk Monitoring System in NER* | **Eastern Himalayas & Indo-Burma Ranges**<br/>(Assam, Meghalaya, Sikkim, Manipur, Mizoram, Arunachal Pradesh, Nagaland, Tripura) | **ROC-AUC: 0.9940 \| F1-Score: 0.9504**<br/>Inference Latency: &lt; 25ms \| 42/42 Tests Passing |
 
 <br/>
 

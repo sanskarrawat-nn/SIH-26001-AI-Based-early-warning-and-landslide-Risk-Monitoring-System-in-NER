@@ -1,4 +1,4 @@
-# Online Cloud Deployment Guide: NER Landslide Early Warning System
+# Online Cloud Deployment Guide: AI-Based early warning and landslide Risk Monitoring System in NER
 
 This system is fully architected for 100% turnkey deployment on all major cloud hosting platforms.
 

@@ -165,7 +165,7 @@ export const App: React.FC<{accountRole?:'admin'|'coordinator'}> = ({accountRole
   const severeCount = alerts.filter(a => a.severity === 'SEVERE' && a.status === 'ACTIVE').length;
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#070d19] text-slate-100 selection:bg-rose-500 selection:text-white">
+    <div className="command-app min-h-screen flex flex-col bg-[#070d19] text-slate-100 selection:bg-rose-500 selection:text-white">
       {/* Top Navigation */}
       <Navbar
         allowedTabs={allowedTabs}

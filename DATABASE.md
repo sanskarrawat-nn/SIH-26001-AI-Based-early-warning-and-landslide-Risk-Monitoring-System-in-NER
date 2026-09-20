@@ -1,4 +1,4 @@
-# Database Specification: NER Landslide Early Warning System
+# Database Specification: AI-Based early warning and landslide Risk Monitoring System in NER
 
 ## 1. Overview & Dual Database Architecture
 

@@ -1,4 +1,4 @@
-# AI-Based Landslide Prediction & Early Warning System (NER-LEWS)
+# AI-Based early warning and landslide Risk Monitoring System in NER (NER-LEWS)
 
 ## System Specification & Solution Architecture Document
 

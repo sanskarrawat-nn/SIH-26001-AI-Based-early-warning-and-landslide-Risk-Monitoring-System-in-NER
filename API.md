@@ -1,4 +1,4 @@
-# REST API Specification: NER Landslide Early Warning System
+# REST API Specification: AI-Based early warning and landslide Risk Monitoring System in NER
 
 Base URL: `http://localhost:8000/api`  
 Interactive Swagger UI: `http://localhost:8000/docs`  
@@ -15,7 +15,7 @@ Returns system diagnostics, database status, ML engine state, and weather provid
 ```json
 {
   "status": "healthy",
-  "service": "NER Landslide Early Warning System",
+  "service": "AI-Based early warning and landslide Risk Monitoring System in NER",
   "version": "1.0.0",
   "database": "healthy",
   "ml_engine": "loaded",

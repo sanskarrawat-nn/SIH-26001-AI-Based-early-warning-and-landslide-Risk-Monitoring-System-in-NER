@@ -34,6 +34,18 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
 }) => {
   return (
     <div className="space-y-6">
+      <section className="terrain-hero">
+        <span className="command-eyebrow">LANDSLIDE MONITORING & RESPONSE</span>
+        <h1>A clearer view.<br/>A coordinated response.</h1>
+        <p>Explore vulnerable locations, review warnings and connect field evidence with the teams who respond.</p>
+        <div className="hero-actions"><button onClick={()=>onNavigateTab('map')}>Explore the risk map <ArrowRight size={17}/></button><button onClick={()=>onNavigateTab('response')}>Open response centre</button></div>
+        <span className="hero-footnote">Prototype risk estimates support review; they do not confirm an incident.</span>
+      </section>
+      <div className="command-shortcuts">
+        <button onClick={()=>onNavigateTab('alerts')}><span>01 / MONITOR</span><strong>Review early warnings</strong><small>{alerts.filter(a=>a.status==='ACTIVE').length} active warnings · inspect severity and location</small></button>
+        <button onClick={()=>onNavigateTab('operations')}><span>02 / VERIFY</span><strong>Review field evidence</strong><small>Reports, site details and road connectivity</small></button>
+        <button onClick={()=>onNavigateTab('response')}><span>03 / RESPOND</span><strong>Coordinate your teams</strong><small>Assignments, acknowledgements and resource requests</small></button>
+      </div>
       {/* 1. Metric Overview Cards */}
       <MetricOverview locations={locations} alerts={alerts} />
 

@@ -1,4 +1,4 @@
-# System Architecture: NER Landslide Early Warning System
+# System Architecture: AI-Based early warning and landslide Risk Monitoring System in NER
 
 ## 1. Architectural Overview
 
