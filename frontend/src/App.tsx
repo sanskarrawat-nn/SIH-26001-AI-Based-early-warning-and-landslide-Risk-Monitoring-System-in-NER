@@ -276,9 +276,9 @@ export const App: React.FC<{accountRole?:'admin'|'coordinator'}> = ({accountRole
       <footer className="border-t border-slate-800/80 bg-[#070d19] py-4 text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <span className="font-mono font-bold text-slate-400">NER-LEWS</span>
+            <span className="font-brand font-bold text-amber-300">BHOO-सतर्क</span>
             <span>&bull;</span>
-            <span>AI-Based Landslide Prediction and Early Warning System</span>
+            <span>AI-Based early warning and landslide Risk Monitoring System in NER</span>
           </div>
           <div className="flex items-center gap-4 text-[11px] font-mono">
             <span className="flex items-center gap-1 text-emerald-400">

@@ -1,7 +1,18 @@
-# 🏔️ NER-LEWS: AI-Based early warning and landslide Risk Monitoring System in NER
-### *Autonomous Geotechnical Risk Intelligence, Multi-Layer GIS Command Center & Disaster Response Coordination for India's North Eastern Region*
+# 🏔️ BHOO-सतर्क (Bhoo-Satark)
+### *AI-Based early warning and landslide Risk Monitoring System in NER*
 
 <div align="center">
+
+```
+  ____  _   _  ___   ___   _     ____    _  _____  _    ____  _  __
+ | __ )| | | |/ _ \ / _ \ | |   / ___|  / \|_   _|/ \  |  _ \| |/ /
+ |  _ \| |_| | | | | | | || |   \___ \ / _ \ | | / _ \ | |_) | ' / 
+ | |_) |  _  | |_| | |_| ||_|___ ___) / ___ \| |/ ___ \|  _ <| . \ 
+ |____/|_| |_|\___/ \___/ |_____|____/_/   \_\_/_/   \_\_| \_\_|\_\
+                            ( भू - सतर्क )
+```
+
+**Autonomous Geotechnical Risk Intelligence • Multi-Layer GIS Command Center • Disaster Response Coordination**
 
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI%200.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/Frontend-React%2018%20%7C%20Vite%206-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
@@ -18,7 +29,7 @@
 
 | 🎯 Smart India Hackathon | 📍 Target Geo-Corridor | ⚡ Validated Benchmarks |
 |:---:|:---:|:---:|
-| **Problem ID: 26001**<br/>*AI-Based early warning and landslide Risk Monitoring System in NER* | **Eastern Himalayas & Indo-Burma Ranges**<br/>(Assam, Meghalaya, Sikkim, Manipur, Mizoram, Arunachal Pradesh, Nagaland, Tripura) | **ROC-AUC: 0.9940 \| F1-Score: 0.9504**<br/>Inference Latency: &lt; 25ms \| 42/42 Tests Passing |
+| **Problem ID: 26001**<br/>*AI-Based early warning and landslide Risk Monitoring System in NER*<br/>**Platform: BHOO-सतर्क** | **Eastern Himalayas & Indo-Burma Ranges**<br/>(Assam, Meghalaya, Sikkim, Manipur, Mizoram, Arunachal Pradesh, Nagaland, Tripura) | **ROC-AUC: 0.9940 \| F1-Score: 0.9504**<br/>Inference Latency: &lt; 25ms \| 42/42 Tests Passing |
 
 <br/>
 
@@ -40,13 +51,13 @@
 
 India's **North Eastern Region (NER)** accounts for over **70% of the nation's severe landslide exposure**, driven by fractured Himalayan thrust belts, seismically active fault systems, extreme slope gradients, and hyper-concentrated monsoon cloudbursts. Conventional early-warning setups suffer from sparse rain gauge networks, manual processing latencies, and an absence of real-time, physics-informed soil saturation modeling.
 
-**NER-LEWS (North Eastern Region Landslide Early Warning System)** is an enterprise-grade, full-stack disaster intelligence and response command platform purpose-built for:
+**BHOO-सतर्क (North Eastern Region Landslide Early Warning System - NER-LEWS)** is an enterprise-grade, full-stack disaster intelligence and response command platform purpose-built for:
 - **State Disaster Management Authorities (SDMAs)**
 - **District Emergency Operation Centers (DEOCs)**
 - **Border Roads Organisation (BRO)**
 - **National Disaster Response Force (NDRF) & First Responders**
 
-Integrating **physics-informed machine learning**, **Sentinel-2 satellite NDVI telemetry**, **live Open-Meteo precipitation feeds**, **dynamic road graph routing**, and **multilingual Twilio WhatsApp crisis broadcasts**, NER-LEWS transforms raw geotechnical sensor streams into actionable, life-saving operational directives before slope liquefaction and catastrophic mass wasting occur.
+Integrating **physics-informed machine learning**, **Sentinel-2 satellite NDVI telemetry**, **live Open-Meteo precipitation feeds**, **dynamic road graph routing**, and **multilingual Twilio WhatsApp crisis broadcasts**, BHOO-सतर्क transforms raw geotechnical sensor streams into actionable, life-saving operational directives before slope liquefaction and catastrophic mass wasting occur.
 
 ---
 

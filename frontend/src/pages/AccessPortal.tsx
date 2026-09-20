@@ -22,7 +22,7 @@ export function AccessPortal(){
  if(who.role!=='guest')return <div className="role-workspace min-h-screen bg-[#070d19] text-slate-100"><div className="account-strip border-b border-slate-700 p-3 flex flex-wrap justify-between gap-3"><span><strong>{who.name}</strong> · {roles[who.role].title}</span><button disabled={busy} className="underline" onClick={logout}>Sign out / switch role</button></div>{error&&<p role="alert" className="p-4 text-rose-300">{error}</p>}{who.role==='admin'||who.role==='coordinator'?<App accountRole={who.role}/>:<RoleDashboard who={who} onLogout={logout}/>}</div>;
  return <main className="role-login-screen">
   <section className="role-login-shell" aria-labelledby="login-title">
-   <p className="role-login-brand">NER LANDSLIDE EARLY WARNING</p>
+   <p className="role-login-brand">BHOO-सतर्क LANDSLIDE EARLY WARNING</p>
    <h1 id="login-title">USER LOGIN</h1><div className="login-steps" aria-label="Sign in steps"><span className={role?'complete':'current'}>1 · Choose role</span><span className={role?'current':''}>2 · Sign in</span></div>
    <form className="role-login-panel" onSubmit={async e=>{
     const f=values(e);if(!role)return;setBusy(true);setError('');setHelp('');

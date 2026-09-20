@@ -21,7 +21,7 @@ export const Navbar:React.FC<NavbarProps> = ({allowedTabs,currentTab,onSelectTab
   const visible=items.filter(i=>!allowedTabs||allowedTabs.includes(i.id));
   return <>
     <aside className={`command-sidebar ${compact?'is-compact':''}`}>
-      <div className="command-brand"><Mountain size={30}/><div className="sidebar-copy"><strong>NER–LEWS</strong><small>Landslide early warning</small></div></div>
+      <div className="command-brand"><Mountain size={30}/><div className="sidebar-copy"><strong>BHOO-सतर्क</strong><small>Earth-Alert Landslide AI</small></div></div>
       <button className="nav-mobile-toggle" aria-expanded={open} aria-controls="command-links" onClick={()=>setOpen(!open)}>{open?<X size={20}/>:<Menu size={20}/>}<span>{open?'Close navigation':'Explore sections'}</span></button>
       <nav id="command-links" aria-label="Main navigation" className={`command-links ${open?'is-open':''}`}>
         {['Monitor','Respond','Manage'].map(group=><section key={group}>
