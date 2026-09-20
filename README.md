@@ -35,6 +35,7 @@
 
 [Executive Summary](#-executive-summary) •
 [Platform UI & Gallery](#-platform-interface--screenshot-walkthrough) •
+[Role Dashboards](#9--specialized-stakeholder-role-dashboards) •
 [Core Features](#-core-features--technical-deep-dive) •
 [System Architecture](#-system-architecture) •
 [Geotechnical Physics & ML](#-geotechnical-physics--ml-engine) •
@@ -263,11 +264,75 @@ Below are the actual operational screens of the **BHOO-सतर्क** command
 
 ---
 
+### 9. 👥 Specialized Stakeholder Role Dashboards
+
+BHOO-सतर्क enforces strict role-segregated workspaces tailored for each emergency stakeholder. Rather than overloading frontline units with complex ML hyperparameters, each role receives a purpose-built interface designed for high-stress disaster operations:
+
+#### A. 🏛️ Government & Disaster Coordinator Dashboard (`/login/coordinator`)
+*Incident Command, Multi-Agency Dispatch Approval & Verification Queue*
+
+![Disaster Coordinator Workspace](docs/images/09_role_coordinator.png)
+
+- **Operational Scope:** Incident triage, multi-team dispatch authorization, field evidence validation, and inter-agency resource tracking.
+- **Key Features:** Full access to prediction simulations, GIS overlays, early warning dispatch SOPs, and response incident management.
+
+---
+
+#### B. 🥾 Field Officer Observation & Ground Truth Workspace (`/login/field`)
+*Geotagged Field Sighting Submission & Photo/Video Evidence Capture*
+
+![Field Officer Workspace](docs/images/10_role_field_officer.png)
+
+- **Operational Scope:** On-ground reconnaissance, rapid crack and slope movement submissions, and post-event damage surveys.
+- **Key Features:** One-tap GPS coordinate capture, camera/video evidence attachment, and real-time status updates on assigned incident investigations.
+
+---
+
+#### C. 🚒 Rescue & Evacuation Team Deployment Dashboard (`/login/rescue`)
+*Tactical Mission Lifecycle & Team Availability Telemetry*
+
+![Rescue & Evacuation Team Workspace](docs/images/11_role_rescue_team.png)
+
+- **Operational Scope:** NDRF / SDRF search-and-rescue units, quick response teams (QRT), and civil defense battalions.
+- **Key Features:** View designated rescue zones, update live deployment state (**Accepted → En Route → On Scene → Operation Completed**), and toggle operational readiness status.
+
+---
+
+#### D. 🏥 Hospital & Ambulance Emergency Capacity Dashboard (`/login/medical`)
+*Mass-Casualty Incident Triage & Critical Care Telemetry*
+
+![Hospital & Ambulance Medical Workspace](docs/images/12_role_medical_team.png)
+
+- **Operational Scope:** District civil hospitals, trauma centers, and state emergency medical services (EMS).
+- **Key Features:** Track inbound casualty alerts, log available ICU beds, trauma surgeons, and ready ambulance fleets for automated regional triage routing.
+
+---
+
+#### E. 🚓 Police & Traffic Lifeline Control Dashboard (`/login/police`)
+*Corridor Clearance, Roadblocks & Evacuation Route Management*
+
+![Police & Traffic Control Workspace](docs/images/13_role_police_team.png)
+
+- **Operational Scope:** State traffic police, Border Roads Organisation (BRO) highway patrol, and district law enforcement.
+- **Key Features:** Real-time road status logging (Open, Restricted, Blocked), critical arterial diversions (e.g. NH-27, NH-6), and convoy corridor safety monitoring.
+
+---
+
+#### F. 📢 Public Citizen Community Observation Workspace (`/login/public`)
+*Democratized Early Warnings & Verified Crowdsourced Sighting Reports*
+
+![Public Citizen Workspace](docs/images/14_role_public_user.png)
+
+- **Operational Scope:** Village heads, local residents, commuters, and school administrators.
+- **Key Features:** Accessible local hazard notices without operational jargon, simple 3-step sighting report forms, and privacy-shielded status tracking.
+
+---
+
 ## 🌟 Core Features & Technical Deep Dive
 
 ```mermaid
 mindmap
-  root((NER-LEWS))
+  root((BHOO-सतर्क))
     Physics-Informed ML
       Mohr-Coulomb Failure Criterion
       Caine-Guzzetti I-D Rainfall Envelopes
