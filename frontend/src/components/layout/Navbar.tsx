@@ -64,50 +64,22 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header className="sticky top-0 z-40 bg-[#070d19]/95 backdrop-blur border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex flex-wrap items-center justify-between gap-3 min-h-16 py-3">
           {/* Logo & Branding */}
-          <div className="flex items-center gap-3 cursor-pointer" onClick={() => onSelectTab('dashboard')}>
-            <div className="p-2 rounded-lg bg-gradient-to-br from-rose-600 to-amber-600 shadow-md shadow-rose-950/50">
+          <div className="flex min-w-0 items-center gap-3 cursor-pointer" onClick={() => onSelectTab('dashboard')}>
+            <div className="shrink-0 p-2 rounded-lg bg-gradient-to-br from-rose-600 to-amber-600 shadow-md shadow-rose-950/50">
               <ShieldAlert className="w-6 h-6 text-white" />
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <span className="text-lg font-extrabold tracking-wider font-mono text-white">NER-LEWS</span>
               </div>
-              <div className="text-[11px] text-slate-400 font-medium leading-tight whitespace-nowrap">
+              <div className="text-[11px] text-slate-400 font-medium leading-tight">
                 <p>North Eastern Region Early Warning</p>
                 <p>Command Center</p>
               </div>
             </div>
           </div>
-
-          {/* Navigation Links */}
-          <nav className="hidden 2xl:flex items-center space-x-1">
-            {navItems.map((item) => {
-              const active = currentTab === item.id;
-              return (
-                <button
-                  key={item.id}
-                  onClick={() => onSelectTab(item.id)}
-                  className={`flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-semibold tracking-wide transition-colors ${
-                    active
-                      ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 shadow-sm'
-                      : 'text-slate-300 hover:bg-slate-800/60 hover:text-white'
-                  }`}
-                >
-                  {item.icon}
-                  <span>{item.label}</span>
-                  {item.badge !== undefined && (
-                    <span className={`ml-1 px-1.5 py-0.2 rounded-full text-[10px] font-bold ${
-                      severeCount > 0 ? 'bg-rose-600 text-white animate-pulse' : 'bg-amber-600 text-white'
-                    }`}>
-                      {item.badge}
-                    </span>
-                  )}
-                </button>
-              );
-            })}
-          </nav>
 
           {/* Right Status / Telemetry */}
           <div className="flex items-center gap-4">
@@ -132,8 +104,37 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
           </div>
         </div>
+          {/* All headings wrap within the page instead of widening the header. */}
+          <nav aria-label="Main navigation" className="flex flex-wrap items-center gap-2 pb-3">
+            {navItems.map((item) => {
+              const active = currentTab === item.id;
+              return (
+                <button
+                  key={item.id}
+                  aria-current={active ? 'page' : undefined}
+                  onClick={() => onSelectTab(item.id)}
+                  className={`flex max-w-full items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-semibold tracking-wide transition-colors ${
+                    active
+                      ? 'bg-blue-600/20 text-blue-400 border border-blue-500/30 shadow-sm'
+                      : 'text-slate-300 hover:bg-slate-800/60 hover:text-white'
+                  }`}
+                >
+                  {item.icon}
+                  <span>{item.label}</span>
+                  {item.badge !== undefined && (
+                    <span className={`ml-1 px-1.5 py-0.2 rounded-full text-[10px] font-bold ${
+                      severeCount > 0 ? 'bg-rose-600 text-white animate-pulse' : 'bg-amber-600 text-white'
+                    }`}>
+                      {item.badge}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </nav>
+
       </div>
-      <nav aria-label="Mobile navigation" className="flex 2xl:hidden overflow-x-auto gap-2 px-4 pb-3">{navItems.map(item=><button key={item.id} onClick={()=>onSelectTab(item.id)} className={`shrink-0 rounded-lg px-4 py-3 text-sm ${currentTab===item.id?'bg-blue-600':'bg-slate-800'}`}>{item.label}</button>)}</nav>
+
     </header>
   );
 };
