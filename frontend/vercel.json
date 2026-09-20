@@ -5,6 +5,14 @@
   "framework": "vite",
   "rewrites": [
     {
+      "source": "/api/:path*",
+      "destination": "https://bhoo-satark-backend.onrender.com/api/:path*"
+    },
+    {
+      "source": "/health",
+      "destination": "https://bhoo-satark-backend.onrender.com/health"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
