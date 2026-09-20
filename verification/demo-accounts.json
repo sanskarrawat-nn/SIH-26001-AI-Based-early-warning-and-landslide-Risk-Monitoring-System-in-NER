@@ -1,0 +1,8 @@
+{
+  "accounts_created": 7,
+  "actual_login_checks_passed": 7,
+  "admin_access_checked": true,
+  "non_admin_account_management_denied": true,
+  "notification_channels_for_demo_teams": [],
+  "live_deployment_changed": false
+}

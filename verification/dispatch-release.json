@@ -1,0 +1,87 @@
+{
+  "release": "Response coordination",
+  "source_zip": "01-landslide-monitoring-updated.zip",
+  "backend_full_suite": {
+    "passed": 77,
+    "failed": 0
+  },
+  "final_dispatch_tests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "frontend_build": "TypeScript, Vite and PWA passed",
+  "browser_visual_check": "Blocked: Chromium process failed to start",
+  "live_notifications_sent": false,
+  "new_dependencies": [],
+  "database": "SQLite tests; uploaded application DB preserved byte-for-byte",
+  "changed_files": [
+    {
+      "path": ".env.example",
+      "change": "updated"
+    },
+    {
+      "path": "RESPONSE-COORDINATION-GUIDE.md",
+      "change": "added"
+    },
+    {
+      "path": "frontend/dist/sw.js",
+      "change": "updated"
+    },
+    {
+      "path": "frontend/dist/index.html",
+      "change": "updated"
+    },
+    {
+      "path": "frontend/dist/assets/index-Dmmtm9B-.css",
+      "change": "added"
+    },
+    {
+      "path": "frontend/dist/assets/index-BHdzEr6G.js",
+      "change": "added"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "change": "updated"
+    },
+    {
+      "path": "frontend/src/services/dispatch.ts",
+      "change": "added"
+    },
+    {
+      "path": "frontend/src/pages/AlertsCenterPage.tsx",
+      "change": "updated"
+    },
+    {
+      "path": "frontend/src/pages/ResponsePage.tsx",
+      "change": "added"
+    },
+    {
+      "path": "frontend/src/pages/OperationsPage.tsx",
+      "change": "updated"
+    },
+    {
+      "path": "frontend/src/components/layout/Navbar.tsx",
+      "change": "updated"
+    },
+    {
+      "path": "backend/tests/test_dispatch.py",
+      "change": "added"
+    },
+    {
+      "path": "backend/app/main.py",
+      "change": "updated"
+    },
+    {
+      "path": "backend/app/services/dispatch.py",
+      "change": "added"
+    },
+    {
+      "path": "backend/app/api/api.py",
+      "change": "updated"
+    },
+    {
+      "path": "backend/app/api/routes/dispatch.py",
+      "change": "added"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "en": {
+    "name": "English",
+    "title": "Landslide warning",
+    "score": "Risk score",
+    "levels": {
+      "LOW": "Low",
+      "MODERATE": "Moderate",
+      "HIGH": "High",
+      "SEVERE": "Severe"
+    },
+    "statuses": {
+      "ACTIVE": "Active",
+      "ACKNOWLEDGED": "Acknowledged",
+      "RESOLVED": "Resolved"
+    },
+    "action": "Follow local authority instructions. Avoid unstable slopes and blocked roads.",
+    "summary": "Warning summary",
+    "original": "Original incident details and instructions"
+  },
+  "hi": {
+    "name": "हिन्दी",
+    "title": "भूस्खलन चेतावनी",
+    "score": "जोखिम स्कोर",
+    "levels": {
+      "LOW": "कम",
+      "MODERATE": "मध्यम",
+      "HIGH": "उच्च",
+      "SEVERE": "गंभीर"
+    },
+    "statuses": {
+      "ACTIVE": "सक्रिय",
+      "ACKNOWLEDGED": "प्राप्ति की पुष्टि",
+      "RESOLVED": "समाधान हो गया"
+    },
+    "action": "स्थानीय प्रशासन के निर्देशों का पालन करें। अस्थिर ढलानों और अवरुद्ध सड़कों से दूर रहें।",
+    "summary": "चेतावनी का सारांश",
+    "original": "घटना का मूल विवरण और निर्देश"
+  },
+  "as": {
+    "name": "অসমীয়া",
+    "title": "ভূমিস্খলনৰ সতৰ্কবাণী",
+    "score": "বিপদৰ স্ক’ৰ",
+    "levels": {
+      "LOW": "কম",
+      "MODERATE": "মধ্যম",
+      "HIGH": "উচ্চ",
+      "SEVERE": "গুৰুতৰ"
+    },
+    "statuses": {
+      "ACTIVE": "সক্ৰিয়",
+      "ACKNOWLEDGED": "প্ৰাপ্তি স্বীকাৰ কৰা হৈছে",
+      "RESOLVED": "সমাধান হৈছে"
+    },
+    "action": "স্থানীয় প্ৰশাসনৰ নিৰ্দেশ মানি চলক। অস্থিৰ ঢাল আৰু বন্ধ পথৰ পৰা আঁতৰি থাকক।",
+    "summary": "সতৰ্কবাণীৰ সাৰাংশ",
+    "original": "ঘটনাৰ মূল বিৱৰণ আৰু নিৰ্দেশ"
+  },
+  "bn": {
+    "name": "বাংলা",
+    "title": "ভূমিধসের সতর্কবার্তা",
+    "score": "ঝুঁকির স্কোর",
+    "levels": {
+      "LOW": "কম",
+      "MODERATE": "মাঝারি",
+      "HIGH": "উচ্চ",
+      "SEVERE": "গুরুতর"
+    },
+    "statuses": {
+      "ACTIVE": "সক্রিয়",
+      "ACKNOWLEDGED": "প্রাপ্তি স্বীকার করা হয়েছে",
+      "RESOLVED": "সমাধান হয়েছে"
+    },
+    "action": "স্থানীয় প্রশাসনের নির্দেশ মেনে চলুন। অস্থিতিশীল ঢাল ও বন্ধ রাস্তা থেকে দূরে থাকুন।",
+    "summary": "সতর্কবার্তার সারাংশ",
+    "original": "ঘটনার মূল বিবরণ ও নির্দেশ"
+  }
+}

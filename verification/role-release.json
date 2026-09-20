@@ -1,0 +1,43 @@
+{
+  "backend_tests": {
+    "passed": 106,
+    "legacy_regression_tests": 77,
+    "role_access_tests": 29,
+    "note": "Legacy suite uses RBAC_ENABLED=false in test fixture; role suite enables default production guard."
+  },
+  "frontend_build": "TypeScript + Vite + PWA passed",
+  "browser_visual_check": "Blocked: Chromium exits during launch",
+  "outbound_messages_sent": false,
+  "deployed": false,
+  "original_database_preserved": false,
+  "database_sha256": "5ef99f6b5324dfb70253e4c8df2b2ea19234548f451fbb17c5555d69fb50cc92",
+  "changed_files": [
+    ".env.example",
+    "README.md",
+    "RESPONSE-COORDINATION-GUIDE.md",
+    "ROLE-LOGIN-GUIDE.md",
+    "backend/app/api/api.py",
+    "backend/app/api/routes/access.py",
+    "backend/app/api/routes/dispatch.py",
+    "backend/app/api/routes/operations.py",
+    "backend/app/core/access.py",
+    "backend/app/core/admin_auth.py",
+    "backend/app/main.py",
+    "backend/landslide_system.db",
+    "backend/tests/conftest.py",
+    "backend/tests/test_role_access.py",
+    "frontend/dist/assets/index-D2pFWYrl.js",
+    "frontend/dist/assets/index-ZMvDjJVl.css",
+    "frontend/dist/index.html",
+    "frontend/dist/sw.js",
+    "frontend/src/App.tsx",
+    "frontend/src/components/admin/WhatsAppSettings.tsx",
+    "frontend/src/components/layout/Navbar.tsx",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/AccessPortal.tsx",
+    "frontend/src/pages/OperationsPage.tsx",
+    "frontend/src/pages/ResponsePage.tsx",
+    "frontend/src/services/access.ts"
+  ],
+  "database_update": "Existing data retained; seven named demo accounts and three inactive-availability demo teams added"
+}

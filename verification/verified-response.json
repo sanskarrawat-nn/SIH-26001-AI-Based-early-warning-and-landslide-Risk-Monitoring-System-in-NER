@@ -1,0 +1,33 @@
+{
+  "full_backend_suite_passed": 117,
+  "extended_workflow_suite_passed": 11,
+  "frontend_build": "TypeScript, Vite and PWA passed",
+  "external_delivery_test": "Mock provider verified 3 SMS and 3 WhatsApp requests after coordinator approval",
+  "real_messages_sent": false,
+  "browser_visual_validation": "Not performed; Chromium runtime previously failed to launch",
+  "live_deployment_changed": false,
+  "uploaded_database_preserved_byte_for_byte": true,
+  "database_sha256": "5ef99f6b5324dfb70253e4c8df2b2ea19234548f451fbb17c5555d69fb50cc92",
+  "changed_files": [
+    "README.md",
+    "ROLE-LOGIN-GUIDE.md",
+    "VERIFIED-RESPONSE-GUIDE.md",
+    "backend/app/api/api.py",
+    "backend/app/api/routes/access.py",
+    "backend/app/api/routes/operations.py",
+    "backend/app/api/routes/readiness.py",
+    "backend/app/api/routes/verified_response.py",
+    "backend/tests/test_verified_response.py",
+    "frontend/dist/assets/index-B-N-OCsv.css",
+    "frontend/dist/assets/index-Cqei0Xje.js",
+    "frontend/dist/index.html",
+    "frontend/dist/sw.js",
+    "frontend/src/App.tsx",
+    "frontend/src/index.css",
+    "frontend/src/pages/AccessPortal.tsx",
+    "frontend/src/pages/OperationsPage.tsx",
+    "frontend/src/pages/ResponderOverview.tsx",
+    "frontend/src/pages/ResponsePage.tsx",
+    "frontend/src/pages/VerifiedReports.tsx"
+  ]
+}

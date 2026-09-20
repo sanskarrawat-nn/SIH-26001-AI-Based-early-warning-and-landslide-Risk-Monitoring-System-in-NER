@@ -1,0 +1,21 @@
+{
+  "legacyQueueMigrated": true,
+  "reconnectEventSync": true,
+  "roadCreated": true,
+  "roadConnectivity": true,
+  "roadMapLayer": true,
+  "drawerAboveMap": true,
+  "alertLanguages": 4,
+  "serviceWorker": true,
+  "offlineReload": true,
+  "videoPersisted": true,
+  "reconnectedSync": true,
+  "videoPlaybackMetadata": {
+    "duration": 1
+  },
+  "mobileWidth": {
+    "scroll": 390,
+    "viewport": 390
+  },
+  "pageErrors": []
+}

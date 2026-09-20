@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#070d19] text-slate-100 font-sans;
+  }
+}
+
+/* Custom Tactical Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c1527;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3a8a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* Custom Marker Pulsing Animations */
+@keyframes pulse-severe {
+  0% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(239, 68, 68, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+@keyframes pulse-high {
+  0% {
+    box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(249, 115, 22, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
+  }
+}
+
+.pulsing-severe {
+  animation: pulse-severe 1.5s infinite;
+}
+
+.pulsing-high {
+  animation: pulse-high 2s infinite;
+}
+
+/* Leaflet Container Overrides */
+.leaflet-container {
+  background-color: #070d19 !important;
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: #0c1527 !important;
+  color: #f1f5f9 !important;
+  border: 1px solid #1e293b !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.leaflet-popup-tip {
+  background-color: #0c1527 !important;
+}
+
+/* Unified role-first login, styled after the supplied teal reference. */
+.role-login-screen {
+  min-height: 100vh; min-height: 100dvh; display: grid; place-items: center;
+  padding: 42px 20px; color: #eaf3f3; isolation: isolate;
+  background: radial-gradient(ellipse at 12% 25%, #356f78aa, transparent 42%),
+    radial-gradient(ellipse at 85% 84%, #38818b99, transparent 48%),
+    radial-gradient(ellipse at 85% 15%, #306d75, transparent 48%),
+    linear-gradient(140deg, #102d32 0%, #18464d 50%, #245f68 100%);
+}
+.role-login-shell { width: min(100%, 370px); text-align: center; }
+.role-login-brand { font-size: 10px; letter-spacing: .2em; color: #c0dbde; margin-bottom: 16px; }
+.role-login-shell h1 { font-size: 25px; letter-spacing: .17em; font-weight: 300; color: #d0e3e5; margin: 0 0 20px; }
+.role-login-panel { background: #071d22ed; padding: 29px 25px 25px; box-shadow: 0 14px 42px #061a2133; text-align: left; border: 1px solid #6c9aa320; }
+.role-login-label { display: block; font-size: 12px; margin-bottom: 9px; color: #d0e1e3; }
+.role-login-field { display: flex; align-items: stretch; background: #d4d8d8; color: #374249; margin-bottom: 13px; min-width: 0; }
+.role-login-field > span { display: flex; align-items: center; justify-content: center; width: 44px; flex: 0 0 44px; background: #e1e5e5; }
+.role-login-field input, .role-login-field select { min-width: 0; width: 100%; height: 48px; border: 0; border-radius: 0; background: transparent; color: #28393e; font: inherit; font-size: 13px; padding: 0 12px; }
+.role-login-field select { padding-right: 4px; }
+.role-login-field input::placeholder { color: #59656a; opacity: 1; }
+.role-login-field:focus-within { outline: 2px solid #a5e6ec; outline-offset: 2px; }
+.role-login-field input:focus, .role-login-field select:focus { outline: none; }
+.role-login-field input:disabled { opacity: .65; cursor: not-allowed; }
+.role-login-options { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; font-size: 11px; padding: 11px 0 21px; }
+.role-login-options label { display: flex; align-items: center; gap: 7px; cursor: pointer; }
+.role-login-options input { accent-color: #7ac0c8; }
+.role-login-options button { font-style: italic; color: #c6dbde; }
+.role-login-options button:hover { text-decoration: underline; }
+.role-login-submit, .role-login-register { width: 100%; min-height: 47px; font-size: 12px; font-weight: 600; letter-spacing: .12em; border: 1px solid #719ca6; background: #467e89; color: #fff; transition: background .15s; }
+.role-login-submit:hover:not(:disabled) { background: #568f99; }
+.role-login-submit:disabled { opacity: .55; cursor: not-allowed; }
+.role-login-register { display: block; margin: 14px auto 0; width: calc(100% - 44px); background: #092229; border-color: #497b83; }
+.role-login-register:hover { background: #15383f; }
+.role-login-hint, .role-login-error, .role-login-help { font-size: 12px; line-height: 1.6; margin-bottom: 16px; overflow-wrap: anywhere; }
+.role-login-hint { color: #b4cdd0; }
+.role-login-error { color: #ffcbcb; }
+.role-login-help { color: #cce9ed; border-left: 2px solid #7bb7c2; padding-left: 10px; }
+.role-login-footer { font-size: 11px; color: #c1dade; margin-top: 18px; }
+.role-login-screen button:focus-visible { outline: 2px solid #b7f2f7; outline-offset: 3px; }
+@media (max-width: 380px) { .role-login-panel { padding: 24px 17px; } .role-login-screen { padding: 28px 14px; } }
+
+.login-steps { display:flex; justify-content:center; gap:12px; margin:-4px 0 20px; font-size:11px; color:#abc3c7; }
+.login-steps span { padding:6px 10px; border:1px solid #709da54d; border-radius:20px; }
+.login-steps .current { border-color:#a1dbe3; background:#5895a04d; color:#fff; }
+.login-steps .complete { color:#b3eee2; }
+.login-role-description { font-size:12px; line-height:1.5; color:#d1e9ec; margin:-1px 0 16px; animation:login-appear .2s ease-out; }
+.login-role-description p { margin-top:3px; color:#aac9ce; }
+.login-password-toggle { display:flex; align-items:center; justify-content:center; padding:0 12px; color:#28474f; }
+.login-password-toggle:hover:not(:disabled) { background:#bccfd1; }
+.role-login-submit { display:flex; align-items:center; justify-content:center; gap:9px; }
+.role-login-panel { transition:box-shadow .2s, border-color .2s; }
+.role-login-panel:focus-within { box-shadow:0 16px 48px #051f2870; border-color:#6599a270; }
+@keyframes login-appear { from { opacity:0; transform:translateY(-4px); } to { opacity:1; transform:translateY(0); } }
+@media(prefers-reduced-motion:reduce) { .login-role-description,.role-login-screen .animate-spin { animation:none; } .role-login-panel { transition:none; } }

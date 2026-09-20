@@ -1,0 +1,8 @@
+{
+  "change": "Single teal role-first login matching screenshot layout",
+  "role_tests_passed": 31,
+  "frontend_build": "passed",
+  "browser_visual_check": "Unavailable: Chromium launch failure previously confirmed",
+  "live_deployment": false,
+  "email_login": "Email may be assigned as the account login ID; not a separate alias"
+}

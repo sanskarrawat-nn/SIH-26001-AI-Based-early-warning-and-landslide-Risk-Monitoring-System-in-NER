@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: ner-landslide-command-center
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: singapore
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: ner-landslide-db
+          property: connectionString
+      - key: WEATHER_PROVIDER
+        value: hybrid
+      - key: SERVE_STATIC_FRONTEND
+        value: "true"
+      - key: FRONTEND_DIST_DIR
+        value: /app/frontend/dist
+
+databases:
+  - name: ner-landslide-db
+    databaseName: landslide_early_warning
+    user: landslide_admin
+    region: singapore
+    plan: free
